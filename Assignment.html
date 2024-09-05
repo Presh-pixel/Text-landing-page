@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        .username {
+            display: flex;
+            border-bottom: 1px solid black;
+            width: fit-content;
+            padding: 2px 0;
+
+        }
+label{
+    color: gray;
+}
+        .username>input[type="text"] {
+            /* padding: 10px; */
+            margin-left: 10px;
+            width: 250px;
+            border: none;
+        }
+
+        .username>img {
+            width: auto;
+            height: 15px;
+            margin-top: auto;
+        }
+
+        .password {
+            display: flex;
+            border-bottom: 1px solid black;
+            width: fit-content;
+            padding: 2px 0;
+        }
+
+        .password>input[type="password"] {
+            margin-left: 10px;
+            width: 250px;
+            border: none;
+        }
+
+        .form{
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: larger;
+            font-weight: bold;
+            color: black;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        button{
+            border-radius: 20px;
+            margin-top: 10px;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            background-color: blueviolet;
+        }
+       
+        .input-form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: left;
+        }
+        a{
+            width: fit;
+            margin-top: 10px;
+
+            margin-left: auto;
+        }
+        .icons{
+            display: flex;
+            gap: 5px;
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form action="index.php" method="post" class="form">
+        <h1 style="text-align: center; font-size: larger; font-weight: bold; color: black;">Login</h1>
+        <div class="input-form">
+            <label for="username">Username</label>
+            <div class="username">
+                <img src="./assets/images/Username.jpg" width="15">
+                <input type="text" placeholder="Type your username">
+            </div>
+
+        </div>
+        <br />
+
+        <div class="input-form">
+
+            <label>Password</label>
+            <div class="password">
+                <img src="./assets/images/Lock.jpg" width="15">
+                <input type="password" placeholder="Type your password">
+            </div>
+        </div>
+
+        <a href="#" style="font-size: smaller; ">Forgot password</a>
+
+<button>LOGIN</button>
+        <!-- <img src="./assets/images/login.jpg"> -->
+        <h2 style="font-size:SMALL; text-align: center;">or Sign Up Using</h2>
+
+         <div class="icons">
+
+             <img src="./assets/images/Facebook.jpg" width="40"><img src="./assets/images/twitter.jpg" width="40"><img
+                 src="./assets/images/gg.jpg" width="25" ,>
+         </div>
+    </form>
+
+
+
+
+
+</body>
+
+</html>
